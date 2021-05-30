@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Medium.eot');
+    src: url('../fonts/Poppins/Poppins-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Poppins/Poppins-Medium.woff2') format('woff2'),
+    url('../fonts/Poppins/Poppins-Medium.woff') format('woff'),
+    url('../fonts/Poppins/Poppins-Medium.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Regular.eot');
+    src: url('../fonts/Poppins/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Poppins/Poppins-Regular.woff2') format('woff2'),
+    url('../fonts/Poppins/Poppins-Regular.woff') format('woff'),
+    url('../fonts/Poppins/Poppins-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Light.eot');
+    src: url('../fonts/Poppins/Poppins-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Poppins/Poppins-Light.woff2') format('woff2'),
+    url('../fonts/Poppins/Poppins-Light.woff') format('woff'),
+    url('../fonts/Poppins/Poppins-Light.ttf') format('ttf');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+*,
+body,
+html{
+    font-family: 'Poppins';
+}
+
+a{
+    text-decoration: none;
+}
+
+a, h1, h2, h3, h4, h5, h6{
+    color: #ffff;
+}
+
+p{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+input, button{
+    outline: none;
+}
+
+/*--------------wrapper styles---------*/
+
+.body{
+    background: url("../images/bg.jpg")no-repeat;
+    background-size: cover;
+    min-height: 100px;
+}
+
+/*--------------header styles---------*/
+
+.container-content{
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header{
+    padding: 14px;
+}
+
+.logo{
+    max-width: 184px;
+    width: 100%;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.menu-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link-menu{
+    color: #FFFFFF;
+    opacity: 0.5;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.item-menu{
+    margin: 0 20px;
+}
+
+.link-menu:hover{
+    opacity: 1;
+    transition: .3s;
+}
+
+.chose-lg{
+    padding: 11px 35px 12px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    font-size: 18px;
+}
+
+.chose-lg:after{
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    background: url("../images/arrow.svg")no-repeat;
+    width: 14px;
+    height: 8px;
+    background-size: cover;
+}
+
+.languages-container{
+    background: #3f405c;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 30px;
+    position: relative;
+    margin-right: 20px;
+}
+
+.languages-list{
+    position: absolute;
+    top: 22px;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    padding-top: 20px;
+    background: #3f405c;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: none;
+}
+
+.item-language{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #3f405c;
+}
+
+.item-language:last-child{
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.item-language:hover,
+.chose-lg:hover{
+    background: #34354c;
+    border-radius: 30px;
+}
+
+.item-language a{
+    padding: 10px 13px;
+    width: 44px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.btn{
+    width: 160px;
+    color: #FFFFFF;
+    border-radius: 30px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.transparent-btn{
+    background: transparent;
+    border: 1px solid #5E2CED;
+}
+.transparent-btn:hover{
+    background: rgba(94, 44, 237, 0.3);
+    transition: .3s;
+}
+
+.header-btn-container{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.menu-container{
+    width: 40%;
+}
