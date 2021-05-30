@@ -46,6 +46,7 @@ a{
 
 a, h1, h2, h3, h4, h5, h6{
     color: #ffff;
+    line-height: normal;
 }
 
 p{
@@ -184,7 +185,7 @@ input, button{
 }
 
 .btn{
-    width: 160px;
+    width: 165px;
     color: #FFFFFF;
     border-radius: 30px;
     height: 40px;
@@ -208,4 +209,72 @@ input, button{
 
 .menu-container{
     width: 40%;
+}
+
+/*------------first screen-----------*/
+
+.container-text-screen{
+    max-width: 575px;
+    width: 100%;
+}
+
+.main-title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 105%;
+    margin-bottom: 27px;
+}
+
+.main-sub-text{
+    line-height: normal;
+    font-size: 16px;
+    max-width: 457px;
+    font-weight: 300;
+    margin-bottom: 27px;
+}
+
+.tokens{
+    background: linear-gradient(315deg, #8C40D0 36.41%, #C95ED1 70.02%);
+    -webkit-box-shadow: 1px 9px 30px 0px rgba(94, 44, 237, 0.5);
+    -moz-box-shadow: 1px 9px 30px 0px rgba(94, 44, 237, 0.5);
+    box-shadow: 1px 9px 30px 0px rgba(94, 44, 237, 0.5);
+    border: none;
+    margin-right: 20px;
+}
+
+.contract{
+    border: none;
+    background: #F1F4FF;
+    color: #5E2CED;
+}
+
+.tokens:hover,
+.contract:hover{
+    opacity: 0.8;
+    transition: .3s;
+}
+
+.footer-text-screen{
+    display: flex;
+    align-items: baseline;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 30px;
+}
+
+.footer-text-screen p{
+    margin-left: 5px;
+}
+
+.container-first-screen{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+    min-height: 500px;
+}
+
+.first-screen{
+    padding-bottom: 123px;
 }
