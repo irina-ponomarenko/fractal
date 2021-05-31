@@ -250,7 +250,8 @@ input, button{
 }
 
 .tokens:hover,
-.contract:hover{
+.contract:hover,
+.btn-statistic:hover{
     opacity: 0.8;
     transition: .3s;
 }
@@ -277,4 +278,339 @@ input, button{
 
 .first-screen{
     padding-bottom: 123px;
+}
+
+/*----------------blue section--------*/
+
+.blue-section{
+    background: #6A3CEF;
+    min-height: 61px;
+}
+
+.item-statistic{
+    padding: 36px 0 44px;
+}
+
+.list-statistic{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.value-statistic{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.value-statistic:after{
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    width: 82px;
+    height: 1px;
+    background: #FFFFFF;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.item-statistic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 379px;
+}
+
+.value-statistic h3{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+}
+
+.text-statistic{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.center-column{
+    background: #5E2CED;
+}
+
+/*---------------discussed------------*/
+
+.discussed{
+    padding: 100px 85px;
+}
+
+.title-header{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.list-discussed{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-discussed{
+    max-width: 233px;
+}
+
+.item-discussed a{
+    display: block;
+}
+
+/*-------------investments-----------*/
+
+.container-sub-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-title-header{
+    margin-right: 5px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.container-sub-title span{
+    color: #5E2CED;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.container-img-item{
+    margin-bottom: 15px;
+}
+
+.list-investments{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-list-investments{
+    margin-top: 37px;
+}
+
+.text-investments{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.item-investments{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 16px;
+    position: relative;
+}
+
+.item-investments:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 84px;
+    height: 1px;
+    background: #5E2CED;
+}
+
+.container-img-item{
+    min-height: 81px;
+}
+
+.header-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 30px 28px;
+}
+
+.title-block{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    position: relative;
+    padding-bottom: 15px;
+    margin-top: 15px;
+}
+
+.title-block:after{
+    content: '';
+    position: absolute;
+    width: 84px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    background: #C95ED1;
+    height: 1px;
+}
+
+.container-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.container-info p{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.container-info span{
+    color: #A84ED1;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.block-investments{
+    background: #3F405D;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
+    max-width: 350px;
+    width: 100%;
+    margin: 0 15px;
+}
+
+.container-blocks-investments{
+    margin-top: 95px;
+    display: flex;
+}
+
+.title-footer-block{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.content-statistic{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name-statistic{
+    font-weight: 300;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.value{
+    color: #A84ED1;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.container-input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #3F405D;
+    border: 1px solid #A84ED1;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.input-info{
+    background: transparent;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 16px;
+    max-width: 175px;
+    width: 100%;
+}
+
+.btn-input{
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: linear-gradient(315deg, #8C40D0 36.41%, #C95ED1 70.02%);
+    border-radius: 30px;
+    border: none;
+}
+
+.btn-input:hover{
+    opacity: 0.8;
+}
+
+.container-input{
+    margin-top: 25px;
+}
+
+.btn-statistic{
+    background: linear-gradient(315deg, #8C40D0 36.41%, #C95ED1 70.02%);
+    border-radius: 30px;
+    width: 100%;
+    border: none;
+    -webkit-box-shadow: 1px 9px 30px 0px rgba(94, 44, 237, 0.5);
+    -moz-box-shadow: 1px 9px 30px 0px rgba(94, 44, 237, 0.5);
+    box-shadow: 1px 9px 30px 0px rgba(94, 44, 237, 0.5);
+    margin-top: 25px;
+}
+
+.footer-block{
+    background: rgba(7, 16, 59, 0.3);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
+    padding: 19px 28px 28px;
+}
+
+
+.content-statistic-withdraw{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-statistic-withdraw .value{
+    font-size: 20px;
+}
+
+.content-statistic-withdraw:first-child{
+    margin-bottom: 20px;
+}
+
+.btn-transparent{
+    width: 100%;
+    background: transparent;
+    border: 1px solid #a84ed1;
+    color: #A84ED1;
+    margin-top: 20px;
+}
+
+.btn-transparent:hover{
+    background: rgba(168, 78, 209, 0.1);
+    transition: .3s;
+}
+
+.body-block{
+    padding: 0 28px 28px;
+}
+
+.withdraw-header{
+    margin-bottom: 0;
+    padding-bottom: 35px;
 }
