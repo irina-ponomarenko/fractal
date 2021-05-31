@@ -188,7 +188,7 @@ input, button{
     width: 165px;
     color: #FFFFFF;
     border-radius: 30px;
-    height: 40px;
+    height: 45px;
     font-size: 18px;
 }
 
@@ -368,6 +368,10 @@ input, button{
 
 /*-------------investments-----------*/
 
+.investments{
+    padding-bottom: 100px;
+}
+
 .container-sub-title{
     display: flex;
     align-items: center;
@@ -396,7 +400,7 @@ input, button{
 .list-investments{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .container-list-investments{
@@ -599,6 +603,7 @@ input, button{
     border: 1px solid #a84ed1;
     color: #A84ED1;
     margin-top: 20px;
+    height: 45px;
 }
 
 .btn-transparent:hover{
@@ -607,10 +612,199 @@ input, button{
 }
 
 .body-block{
-    padding: 0 28px 28px;
+    padding: 0 28px 40px;
+    position: relative;
+    border-bottom: 4px solid #07103B4D;
 }
 
 .withdraw-header{
     margin-bottom: 0;
     padding-bottom: 35px;
+}
+
+.value.footer-value{
+    font-size: 16px;
+}
+
+.footer-block-withdraw{
+    padding: 24px 28px 40px;
+}
+
+/*------------------referral------------*/
+
+.referral{
+    padding: 95px 0 99px;
+    background: #5E2CED;
+}
+
+.referral-header{
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.referral-header:before,
+.referral-header:after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    display: inline-block;
+    width: 50%;
+    background-clip: content-box;
+    background: rgba(255, 255, 255, 0.3);
+    top: 25px;
+}
+
+.referral-header:before{
+    left: 0;
+    margin: 0 0 0 -19%;
+}
+
+.referral-header:after{
+    right: 0;
+    margin: 0 -19% 0 0;
+    top: 25px;
+}
+
+.item-percent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-percent{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 55px;
+    position: relative;
+}
+
+.title-percent:before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+    width: 84px;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.text-percent{
+    font-weight: 300;
+    font-size: 22px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 20px;
+}
+
+.left-block{
+    width: 47%;
+}
+
+.list-percent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item-percent{
+    padding: 25px 17px;
+    min-width: 150px;
+}
+
+.referral-block-header{
+    display: flex;
+    align-items: center;
+}
+
+.referral-title,
+.referral-block-header span{
+    margin-right: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+.referral-block-header span{
+    margin-right: 0;
+    color: #FFFFFF;
+}
+
+.text-referral{
+    font-weight: 300;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: normal;
+    margin-top: 13px;
+    max-width: 495px;
+    width: 100%;
+}
+
+.container-info-referral{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-block{
+    background: #6A3CEF;
+    border-radius: 5px;
+    padding: 34px 20px 25px 20px;
+    max-width: 530px;
+    width: 100%;
+}
+
+.title-referral-footer{
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.title-referral-footer:after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    display: inline-block;
+    width: 59%;
+    background-clip: content-box;
+    background: rgba(255, 255, 255, 0.3);
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    margin: 0;
+}
+
+.referral-footer{
+    margin: 30px 0 10px;
+}
+
+.referral-input{
+    background: #5a36ce;
+    border: 1px solid #5a36ce;
+    border-radius: 50px;
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 10px;
+    width: 95%;
+    margin: 20px 0 30px;
+}
+
+.copy-btn{
+    width: 290px;
+    height: 45px;
+    color: #5E2CED;
+    font-weight: 500;
+    font-size: 16px;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 50px;
+}
+
+.copy-btn:hover{
+    opacity: 0.8;
+    transition: .3s;
 }
