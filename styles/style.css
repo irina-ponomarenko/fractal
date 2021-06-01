@@ -808,3 +808,206 @@ input, button{
     opacity: 0.8;
     transition: .3s;
 }
+
+/*-------------road map------------*/
+
+.road-map{
+    padding: 94px 0 90px;
+}
+
+.number-block span{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: #5E2CED;
+}
+
+.number-block{
+    width: 50px;
+    height: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.title-map-block{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    margin-bottom: 17px;
+}
+
+.text-map-block{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    color: #7E7E89;
+    max-width: 270px;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+}
+
+.map-block{
+    max-width: 394px;
+    width: 100%;
+    position: relative;
+    padding-bottom: 55px;
+    padding-left: 55px;
+}
+
+.map-block:hover{
+    cursor: pointer;
+}
+
+.first-block,
+.three-block,
+.fifth-block{
+    padding-top: 55px;
+}
+
+.first-block:after,
+.three-block:after,
+.fifth-block:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -34px;
+    width: 14px;
+    height: 100%;
+    background: url("../images/point-line.svg")no-repeat;
+    transform: rotate(180deg);
+    z-index: -2;
+    background-size: 100% 100%;
+}
+
+.second-block:after,
+.fourth-block:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 14px;
+    height: 100%;
+    background: url("../images/point-line.svg")no-repeat;
+    z-index: -2;
+    background-size: 100% 100%;
+}
+
+.first-block:hover .number-block,
+.second-block:hover .number-block,
+.three-block:hover .number-block,
+.fourth-block:hover .number-block,
+.fifth-block:hover .number-block{
+    width: 85px;
+    height: 85px;
+    transition: .3s;
+}
+
+.first-block:hover .number-block,
+.three-block:hover .number-block,
+.fifth-block:hover .number-block{
+    top: -56px;
+    left: -34px;
+}
+
+.second-block:hover .number-block,
+.fourth-block:hover .number-block{
+    bottom: -53px;
+    left: -35px;
+}
+
+.first-block .number-block,
+.second-block .number-block,
+.three-block .number-block,
+.fourth-block .number-block,
+.fifth-block .number-block{
+    position: absolute;
+}
+
+.first-block:hover .number-block:before,
+.second-block:hover .number-block:before,
+.three-block:hover .number-block:before,
+.fourth-block:hover .number-block:before,
+.fifth-block:hover .number-block:before{
+    content: '';
+    position: absolute;
+    left: -7px;
+    right: -7px;
+    bottom: -7px;
+    top: -7px;
+    border-radius: 100%;
+    background: linear-gradient(315deg, #8C40D0 36.41%, #C95ED1 70.02%);
+    z-index: -1;
+    transition: .3s;
+}
+
+
+.first-block:hover .number-block span,
+.second-block:hover .number-block span,
+.three-block:hover .number-block span,
+.fourth-block:hover .number-block span,
+.fifth-block:hover .number-block span{
+    font-size: 35px;
+    transition: .3s;
+}
+.first-block .number-block,
+.three-block .number-block,
+.fifth-block .number-block{
+    top: -40px;
+    left: -18px;
+}
+
+.second-block .number-block,
+.fourth-block .number-block{
+    bottom: -40px;
+    left: -18px;
+}
+
+.second-block{
+    left: 55px;
+}
+
+.fourth-block{
+    right: 0;
+}
+
+.container-map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.list-map{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.list-map:first-child{
+    justify-content: center;
+}
+
+.mobile-block{
+    display: none;
+}
+
+.special-map-line{
+    height: 10px;
+    background: #3E3F5B;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    z-index: -3;
+}
