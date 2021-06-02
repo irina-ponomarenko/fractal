@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Staking</title>
+
+    <!-- styles -->
+
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/media.css">
+
+</head>
+<body class="body">
+<header class="header">
+    <div class="container-content">
+        <div class="content-header">
+            <a href="#" class="logo">
+                <img src="images/logo.svg" alt="logo"/>
+            </a>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="item-menu">
+                        <a href="index.html" class="link-menu" target="_blank">
+                            Main
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-btn-container">
+                <div class="languages-container">
+                    <span class="chose-lg">EN</span>
+                    <ul class="languages-list">
+                        <li class="item-language">
+                            <a href="">RU</a>
+                        </li>
+                        <li class="item-language">
+                            <a href="">EN</a>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="btn transparent-btn">
+                    Connect
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="tabs-section">
+    <div class="container-content">
+        <ul class="tabs">
+            <li class="tabs-item active">
+                <a href="">
+                    Statistics
+                </a>
+            </li>
+            <li class="tabs-item">
+                <a href="">
+                    Create liquidity
+                </a>
+            </li>
+            <li class="tabs-item">
+                <a href="">
+                    Stake
+                </a>
+            </li>
+        </ul>
+        <div class="tabs-content">
+            <div class="tabs-panel active" data-index="0">
+                <div class="container-tab-info">
+                    <div class="container-fit-token">
+                        <div class="tokens-block">
+                            <div class="header-block-tabs">
+                                <h3 class="title-tabs-block">
+                                    FIT Tokens
+                                </h3>
+                                <button type="button" class="create-liquidity">
+                                    Create liquidity
+                                </button>
+                            </div>
+                            <div class="block-value">
+                                <div class="icon-value"></div>
+                                <p class="value-token">
+                                    0.00
+                                </p>
+                            </div>
+                            <div class="result-block-token">
+                                <ul class="list-result">
+                                    <li class="item-result">
+                                        <h4 class="title-result">
+                                            FIT Price
+                                        </h4>
+                                        <span class="result-input">0.1 BNB</span>
+                                    </li>
+                                    <li class="item-result">
+                                        <h4 class="title-result">
+                                            Price change
+                                        </h4>
+                                        <span class="result-input">5%</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="footer-token-block">
+                                <button type="button" class="big-pink-btn metamask">
+                                    Add token to Metamask
+                                </button>
+                                <a href="" class="link-swap">
+                                    Go to Pancake Swap
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="tokens-block extra-bottom">
+                            <div class="header-block-tabs extra-header">
+                                <h3 class="title-tabs-block">
+                                    FIT Tokens
+                                </h3>
+                                <p class="extra-value">
+                                    +0.00
+                                </p>
+                            </div>
+                            <div class="block-current">
+                                <p>
+                                    Your current staking earnings
+                                </p>
+                                <button type="button" class="big-pink-btn">
+                                    Withdraw
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-tokens-block">
+                        <div class="main-right-block">
+                            <div class="tokens-block right-token">
+                                <div class="header-block-tabs extra-header">
+                                    <h3 class="title-tabs-block">
+                                        Daily Yield
+                                    </h3>
+                                    <p class="extra-value">
+                                        +0.00
+                                    </p>
+                                </div>
+                                <div class="footer-right-token">
+                                    <ul class="list-result">
+                                        <li class="item-result">
+                                            <h4 class="title-result">
+                                                Hold bonus
+                                            </h4>
+                                            <span class="result-input">123</span>
+                                        </li>
+                                        <li class="item-result">
+                                            <h4 class="title-result">
+                                                VIP bonus
+                                            </h4>
+                                            <span class="result-input">123</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tokens-block right-token">
+                                <div class="header-block-tabs extra-header">
+                                    <h3 class="title-tabs-block">
+                                        FIT-LP Tokens
+                                    </h3>
+                                    <div class="container-header-info-bottom">
+                                        <p class="extra-value">
+                                            +0.00
+                                        </p>
+                                        <button type="button" class="pink-small-btn">
+                                            Stake
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="footer-right-token">
+                                    <p class="footer-right-text">
+                                        You receive referral rewards up to 6 levels.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-footer">
+                    <div class="chart-container">
+                        <h2 class="title-tabs-block">
+                            Price chart
+                        </h2>
+                        <div class="chart">
+                            <img src="images/chart.png" alt="simulator chart"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs-panel" data-index="1">
+                <!-- content here -->
+            </div>
+            <div class="tabs-panel" data-index="2">
+                <!-- content here -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container-content">
+        <div class="content-footer">
+            <a href="#" class="logo">
+                <img src="images/logo.svg" alt="logo">
+            </a>
+            <p class="footer-info">
+                2021 Fractal Trade © All Right Recieved
+            </p>
+            <button type="button" class="smart-contract">
+                Smart contract
+            </button>
+        </div>
+    </div>
+</footer>
+
+<div class="container-contacts">
+    <ul class="contacts-list">
+        <li class="item-contacts channel">
+            <a href="" class="link-contacts" target="_blank">
+                Channel
+            </a>
+        </li>
+        <li class="item-contacts chat">
+            <a href="" class="link-contacts" target="_blank">
+                Chat
+            </a>
+        </li>
+        <li class="item-contacts twitter">
+            <a href="" class="link-contacts" target="_blank"></a>
+        </li>
+    </ul>
+</div>
+
+<button type="button" class="btn-to-top"></button>
+
+<!-- scripts -->
+
+<script src="js/jQuery_3.6.0.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
