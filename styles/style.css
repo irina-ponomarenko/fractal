@@ -1585,7 +1585,7 @@ input, button{
 }
 
 .container-fit-token{
-    max-width: 750px;
+    max-width: 800px;
     width: 100%;
 }
 
@@ -1675,8 +1675,8 @@ input, button{
 }
 
 .chart{
-    height: 280px;
-    max-width: 1073px;
+    height: 292px;
+    max-width: 1127px;
     width: 100%;
     overflow-x: auto;
 }
