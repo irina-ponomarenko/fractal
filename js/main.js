@@ -39,7 +39,7 @@ $(document).ready(function(){
        $(this).toggleClass('turn-btn');
     });
 
-    //-------------tabs---------------------//
+    //-------------------tabs---------------------//
 
     const tabLinks = document.querySelectorAll(".tabs a");
     const tabPanels = document.querySelectorAll(".tabs-panel");
