@@ -60,4 +60,26 @@ $(document).ready(function(){
         });
     }
 
+    //-------------------switch-----------------//
+
+    $(function () {
+        $('.switch-btn').click(function () {
+            $(this).toggleClass('switch-on');
+            if ($(this).hasClass('switch-on')) {
+                $(this).trigger('on.switch');
+
+            } else {
+                $(this).trigger('off.switch');
+            }
+        });
+        $('.switch-btn').on('on.switch', function () {
+            $($(this).attr('data-id')).removeClass('bl-hide');
+            $(this).closest(".left-token-block").find(".container-input-token").addClass('open-block');
+        });
+        $('.switch-btn').on('off.switch', function () {
+            $($(this).attr('data-id')).addClass('bl-hide');
+            $(this).closest(".left-token-block").find(".container-input-token").removeClass('open-block');
+        });
+    });
+
 });
