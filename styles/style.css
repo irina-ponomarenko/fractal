@@ -252,7 +252,7 @@ input, button{
     animation: radial-pulse 1s infinite;
 }
 
-.contract{
+.btn.contract{
     border: none;
     background: #F1F4FF;
     color: #5E2CED;
@@ -287,6 +287,7 @@ input, button{
 
 .first-screen{
     padding-bottom: 123px;
+    background: #2a2b4a;
 }
 
 /*----------------blue section--------*/
@@ -2383,4 +2384,12 @@ span.bnb-before:before {
 .connect-info-container{
     max-height: 335px;
     overflow-y: auto;
+}
+
+.mobile-burger{
+    display: none;
+}
+
+.mobile-menu-wrapper{
+    display: none;
 }

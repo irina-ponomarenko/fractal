@@ -82,4 +82,16 @@ $(document).ready(function(){
         });
     });
 
+    //-------------------menu close-----------------//
+
+    $(".mobile-burger").click(function (){
+        $(".mobile-menu-wrapper").fadeIn(300);
+        $(".mobile-menu-container").addClass('active-menu');
+    });
+
+    $(".close-menu").click(function (){
+        $(".mobile-menu-container").removeClass('active-menu');
+        $(".mobile-menu-wrapper").fadeOut(300);
+    });
+
 });
