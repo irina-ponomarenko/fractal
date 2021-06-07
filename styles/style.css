@@ -2390,6 +2390,10 @@ span.bnb-before:before {
     display: none;
 }
 
-.mobile-menu-wrapper{
+.mobile-menu-wrapper,
+.footer-mobile-info,
+.mobile-block-fade,
+.current-mobile-open,
+.current-mobile-block{
     display: none;
 }
